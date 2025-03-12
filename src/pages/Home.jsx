@@ -7,8 +7,15 @@ function Home() {
         { id: 3, title: "The Matrix", release_date: "2004" },
     ];
 
+    const handleSearch = () => {
+
+    }
+
 
     return <div className="home">
+        <form onSubmit={handleSearch} className="search-form">
+            <input type="text" placeholder="Search Movies..." className="search-input"></input>
+        </form>
         <div className="movies-grid">
             {movies.map(movie => <MovieCard movie={movie} key={movie.id}></MovieCard>)}
         </div>
