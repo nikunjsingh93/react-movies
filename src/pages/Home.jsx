@@ -20,7 +20,7 @@ function Home() {
       } finally {
         setLoading(false);
       }
-    }
+    };
 
     loadPopularMovies();
   }, []);
@@ -45,11 +45,18 @@ function Home() {
           Search
         </button>
       </form>
-      <div className="movies-grid">
-        {movies.map((movie) => (
-          <MovieCard movie={movie} key={movie.id}></MovieCard>
-        ))}
-      </div>
+
+      {error && <div className="error-message">Failed to load Movies</div>}
+
+      {loading ? (
+        <div className="loading">Loading...</div>
+      ) : (
+        <div className="movies-grid">
+          {movies.map((movie) => (
+            <MovieCard movie={movie} key={movie.id}></MovieCard>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
