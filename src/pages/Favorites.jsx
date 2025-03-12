@@ -1,8 +1,8 @@
 function Favorites() {
 
     return <div className="favorites-empty"> 
-     <h2> No Favorites Movie Yet </h2>
-     <p>Start adding moivies to your favorites</p>
+     <h2> No Favorite Movie Yet </h2>
+     <p>Start adding movies to your favorites</p>
     </div>
 
 }
