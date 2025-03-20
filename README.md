@@ -6,7 +6,7 @@ This web app uses moviedb API to get the movie data. You can save your favorite 
 
 ![Screenshot From 2025-03-12 20-22-42](https://github.com/user-attachments/assets/1c0bcde9-0606-4eb3-8eaf-cfd39ab3b048)
 
-
+Click on Fav icon in your movie card to add your movie to favorites
 ![Screenshot From 2025-03-12 20-23-17](https://github.com/user-attachments/assets/29fd7a31-7679-4e8d-92e7-f93f9dec5aaf)
 
 
